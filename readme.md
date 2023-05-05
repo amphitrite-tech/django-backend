@@ -1,12 +1,12 @@
 Backbone of Django Back-End for the Web Ocean Bulletin:
 
-1. User Authentication:
+##User Authentication:
     Registration / Login (Django built-in authentication)
     Reset password
     No need for two-factor authentication
 
-2. User Models:
-    Captain
+##User Models:
+    ###Captain
         Username
         Password
         Name
@@ -14,20 +14,20 @@ Backbone of Django Back-End for the Web Ocean Bulletin:
         Phone (optional)
         Metadata (to be defined)
         Assigned Ship (Foreign Key)
-    Organization
+    ###Organization
         Name
         Responsible
         Contacts
         Number of Registered Ships
         IMO of ships
         Product Plan (Freemium, Paid)
-    Ship
+    ###Ship
         IMO number
         Unique App Identifier
         Vessel Draft
         Vessel Power-Speed coefficient
         Type of ship
-    Voyage
+    ###Voyage
         Route segments (vectors)
         ETA for each segment and total ETA
         Ship speed for each segment and total ship speed
@@ -36,11 +36,11 @@ Backbone of Django Back-End for the Web Ocean Bulletin:
         Start and end date
         Historical conditions (currents, wave, wind)
 
-3. Database and Storage:
+##Database and Storage:
     Database: SQLite
     External storage (to be chosen when needed)
 
-4. Frontend Interaction (RESTful API):
+##Frontend Interaction (RESTful API):
     User Authentication Endpoints (register, login, password reset)
     Voyage CRUD Endpoints (create, read, update, delete)
     Ship and Organization Endpoints (assign ships to captains, manage organization data)
@@ -48,12 +48,12 @@ Backbone of Django Back-End for the Web Ocean Bulletin:
     Current Data File Upload and Retrieval Endpoints (upload and access current data files)
     Route Computation Endpoint (compute routes using parallel processing)
 
-5. Performance and Monitoring:
+##Performance and Monitoring:
     Fast response time for most requests (within seconds)
     Route computation within 1 minute using parallel processing
     Persistent logging of processes and errors
     Monitoring and analytics within the Django app
 
-6. Miscellaneous:
+##Miscellaneous:
     Future integration with Marine Traffic's API for AIS data (position, speed)
     Support for different file formats for current data files (choose most appropriate)
