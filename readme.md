@@ -1,9 +1,9 @@
-    *User Authentication:
+    * User Authentication:
         Registration / Login (Django built-in authentication)
         Reset password
         No need for two-factor authentication
 
-    *User Models:
+    * User Models:
         Captain
             Username
             Password
@@ -34,11 +34,11 @@
             Start and end date
             Historical conditions (currents, wave, wind)
 
-    *Database and Storage:
+    * Database and Storage:
         Database: SQLite
         External storage (to be chosen when needed)
 
-    *Frontend Interaction (RESTful API):
+    * Frontend Interaction (RESTful API):
         User Authentication Endpoints (register, login, password reset)
         Voyage CRUD Endpoints (create, read, update, delete)
         Ship and Organization Endpoints (assign ships to captains, manage organization data)
@@ -46,12 +46,12 @@
         Current Data File Upload and Retrieval Endpoints (upload and access current data files)
         Route Computation Endpoint (compute routes using parallel processing)
 
-    *Performance and Monitoring:
+    * Performance and Monitoring:
         Fast response time for most requests (within seconds)
         Route computation within 1 minute using parallel processing
         Persistent logging of processes and errors
         Monitoring and analytics within the Django app
 
-    *Miscellaneous:
+    * Miscellaneous:
         Future integration with Marine Traffic's API for AIS data (position, speed)
         Support for different file formats for current data files (choose most appropriate)
