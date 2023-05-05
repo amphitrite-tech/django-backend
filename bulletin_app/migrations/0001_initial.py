@@ -61,7 +61,7 @@ class Migration(migrations.Migration):
                     "organization",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="bulletin.organization",
+                        to="bulletin_app.organization",
                     ),
                 ),
             ],
@@ -85,7 +85,7 @@ class Migration(migrations.Migration):
                 (
                     "ship",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="bulletin.ship"
+                        on_delete=django.db.models.deletion.CASCADE, to="bulletin_app.ship"
                     ),
                 ),
             ],
@@ -110,7 +110,7 @@ class Migration(migrations.Migration):
                         blank=True,
                         null=True,
                         on_delete=django.db.models.deletion.SET_NULL,
-                        to="bulletin.ship",
+                        to="bulletin_app.ship",
                     ),
                 ),
                 (
